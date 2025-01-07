@@ -14,7 +14,7 @@ interface DashboardProps {
   llmResponse: string;
 }
 
-export function Dashboard({ emotions, transcription, llmResponse }: DashboardProps) {
+export default function Dashboard({ emotions, transcription, llmResponse }: DashboardProps) {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showTranscript, setShowTranscript] = useState(false);
 

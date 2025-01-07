@@ -2,11 +2,11 @@
 import React from 'react';
 import './index.scss';
 import toast, { Toaster } from 'react-hot-toast';
-import Sidebar from './components/sidebar/Sidebar';
+import Sidebar from './components/sidebar/index';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainDashboard from './components/MainDashboard/MainDashboard';
-import Library from './components/Library/Library';
-import Projects from './components/Projects/Projects';
+import Library from './components/library';
+import Projects from './components/projects';
+import Dashboard from './components/Dashboard';
 
 
 const App: React.FC = () => {
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <Sidebar />
 
         <Routes>
-          <Route path="/" element={<MainDashboard />} />
+          <Route path="/" element={<Dashboard emotions={[]} transcription="" llmResponse="" />} />
           <Route path="/chat/history" element={<Library />} />
           <Route path="/chat/projects" element={<Projects />} />
         </Routes>

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-import { FaceWidgets } from '../../components/FaceWidget';
-import { Dashboard } from '../../components/Dashboard';
+import { FaceWidgets } from '../FaceWidget';
+import Dashboard  from '../Dashboard';
 import debounce from 'lodash.debounce';
-import AllChatsShow from '../../components/allchatsshow/AllChatsShow';
-import EditorNavbar from '../../components/ui/EditorNavbar';
+import AllChatsShow from '../chat/index';
+import EditorNavbar from '../ui/EditorNavbar';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
